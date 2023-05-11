@@ -1,5 +1,10 @@
 # Squirrel Vite Plugin File Manager
 
+<p align="left">
+  <a href="https://npmjs.com/package/vite"><img src="https://img.shields.io/npm/v/@squirreljs/squirrel-vite-plugin-filemanager.svg" alt="npm package"></a>
+  <a href="https://nodejs.org/en/about/releases/"><img src="https://img.shields.io/node/v/@squirreljs/squirrel-vite-plugin-filemanager.svg" alt="node compatibility"></a>
+</p>
+
 🎉 Squirrel Vite Plugin File Manager 是一款用于打包多个文件夹为单独 zip 文件的 Vite 插件，简化部署和组织项目。用这个实用工具提升你的 Vite 项目体验!
 
 ## 轻松掌握 Vite 产物打包
@@ -70,4 +75,4 @@ interface FileManagerConfigurationOptions {
 
 ## License
 
-SquirrelJS - MIT License © 2023
+SquirrelJS © 2023 - [MIT License](LICENSE)
