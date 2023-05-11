@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "lib": ["ES2015", "DOM", "DOM.Iterable", "ScriptHost"],
+    "target": "ES2015",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "pretty": true
+  },
+  "include": ["src"],
+  "exclude": ["dist", "types", "node_modules"]
+}

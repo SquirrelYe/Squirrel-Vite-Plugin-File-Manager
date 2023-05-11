@@ -1,0 +1,54 @@
+{
+  "name": "@squirreljs/squirrel-vite-plugin-filemanager",
+  "version": "0.1.0",
+  "description": "🐿️ Squirrel Vite Plugin File Manager is a Vite plugin for packaging multiple folders into individual zip files, simplifying deployment and organization. Enhance your Vite projects with this handy tool!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SquirrelYe/Squirrel-Vite-Plugin-File-Manager.git",
+    "directory": "."
+  },
+  "homepage": "https://github.com/SquirrelYe/Squirrel-Vite-Plugin-File-Manager#README",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/esm/index.js"
+    },
+    "./*": {
+      "require": "./dist/cjs/*.js",
+      "import": "./dist/esm/*.js",
+      "types": "./dist/types/*.d.ts",
+      "default": "./dist/esm/*.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsc -b -w",
+    "build": "rimraf dist && pnpm run build:cjs && pnpm run build:esm && pnpm run build:types",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build:esm": "tsc --module esnext --outDir dist/esm",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationMap --outDir dist/types",
+    "prettier": "prettier --write \"src/**/*.ts\" \"*.md\"",
+    "publish": "npm publish --access public"
+  },
+  "author": "SquirrelYe <yexuan0628@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "4.1.2",
+    "jszip": "^3.10.1",
+    "vite": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/rimraf": "^3.0.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^5.0.4"
+  }
+}
