@@ -18,14 +18,14 @@
   <a href="README.en-US.md">English</a> 
 </p>
 
-🎉 Squirrel Vite Plugin File Manager 是一款用于打包多个文件夹为单独 zip 文件的 Vite 插件，简化部署和组织项目。用这个实用工具提升你的 Vite 项目体验!
+🎉 Squirrel Vite Plugin File Manager 是一款用於打包多個文件夾為單獨zip 文件的Vite 插件，簡化部署和組織項目。用這個實用工具提升你的Vite 項目體驗! 
 
-## 轻松掌握 Vite 产物打包
+## 輕鬆掌握Vite 產物打包
 
-- 👉 这是一款专门针对 Vite 的 Plugin，可以让我们快速打包多个文件夹，生成 zip 文件。再也不用担心部署时丢失文件了，一键压缩，方便快捷！👏
-- 💡 想象一下，你在开发过程中需要使用到多个文件夹，这时候你只需要在 Vite 配置中加入该插件，就能将它们全部打包为 zip 文件，方便部署和传输。简直是程序猿的福音啊！😍
-- 🎁 当然啦，这个库并不止于此，它还支持自定义名称、路径等参数，满足你各种奇奇怪怪的需求！毕竟，每位程序猿都有自己的小习惯和爱好嘛。😝
-- 🔽 如果你也想尝试一下这个神奇的插件，记得来 github 上下载 or 使用 npm 包哦~ 🤗
+- 👉 這是一款專門針對Vite 的Plugin，可以讓我們快速打包多個文件夾，生成zip 文件。再也不用擔心部署時丟失文件了，一鍵壓縮，方便快捷！👏 
+- 💡 想像一下，你在開發過程中需要使用到多個文件夾，這時候你只需要在Vite 配置中加入該插件，就能將它們全部打包為zip 文件，方便部署和傳輸。簡直是程序猿的福音啊！😍 
+- 🎁 當然啦，這個庫並不止於此，它還支持自定義名稱、路徑等參數，滿足你各種奇奇怪怪的需求！畢竟，每位程序猿都有自己的小習慣和愛好嘛。😝 
+- 🔽 如果你也想嘗試一下這個神奇的插件，記得來github 上下載or 使用npm 包哦~ 🤗 
 
 ## 使用方法
 
@@ -50,7 +50,7 @@ export default defineConfig({
 });
 ```
 
-## 参数说明
+## 參數說明
 
 ```ts
 interface ArchiveFile {
@@ -65,18 +65,18 @@ interface FileManagerConfigurationOptions {
 }
 ```
 
-| 参数    | 说明         | 类型                    | 默认值 |
+| 參數| 說明| 類型| 默認值| 
 | ------- | ------------ | ----------------------- | ------ |
-| delete  | 删除指定文件 | Array&lt;string&gt;     | []     |
-| filter  | 过滤指定文件 | Array<RegExp \| string> | []     |
+| delete  | 刪除指定文件 | Array&lt;string&gt;     | []     |
+| filter  | 過濾指定文件 | Array<RegExp \| string> | []     |
 | archive | 打包指定文件 | ArchiveFile[]           | []     |
 
 ### ArchiveFile
 
-| 参数        | 说明         | 类型   | 默认值 |
+| 參數| 說明| 類型| 默認值| 
 | ----------- | ------------ | ------ | ------ |
-| source      | 源文件路径   | string | -      |
-| destination | 目标文件路径 | string | -      |
+| source      | 源文件路徑   | string | -      |
+| destination | 目標文件路徑 | string | -      |
 
 ## 效果展示
 

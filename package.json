@@ -1,6 +1,6 @@
 {
   "name": "@squirreljs/squirrel-vite-plugin-filemanager",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "🐿️ Squirrel Vite Plugin File Manager is a Vite plugin for packaging multiple folders into individual zip files, simplifying deployment and organization. Enhance your Vite projects with this handy tool!",
   "repository": {
     "type": "git",

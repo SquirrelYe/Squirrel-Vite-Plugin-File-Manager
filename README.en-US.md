@@ -18,16 +18,16 @@
   <a href="README.en-US.md">English</a> 
 </p>
 
-🎉 Squirrel Vite Plugin File Manager 是一款用于打包多个文件夹为单独 zip 文件的 Vite 插件，简化部署和组织项目。用这个实用工具提升你的 Vite 项目体验!
+🎉 Squirrel Vite Plugin File Manager is a Vite plugin for packaging multiple folders into a single zip file, simplifying deployment and organizing projects. Use this practical tool to enhance your Vite project experience! 
 
-## 轻松掌握 Vite 产物打包
+## Easily master Vite distination packaging
 
-- 👉 这是一款专门针对 Vite 的 Plugin，可以让我们快速打包多个文件夹，生成 zip 文件。再也不用担心部署时丢失文件了，一键压缩，方便快捷！👏
-- 💡 想象一下，你在开发过程中需要使用到多个文件夹，这时候你只需要在 Vite 配置中加入该插件，就能将它们全部打包为 zip 文件，方便部署和传输。简直是程序猿的福音啊！😍
-- 🎁 当然啦，这个库并不止于此，它还支持自定义名称、路径等参数，满足你各种奇奇怪怪的需求！毕竟，每位程序猿都有自己的小习惯和爱好嘛。😝
-- 🔽 如果你也想尝试一下这个神奇的插件，记得来 github 上下载 or 使用 npm 包哦~ 🤗
+- 👉 This is a Plugin specifically for Vite, which allows us to quickly package multiple folders and generate zip files. Don't worry about losing files during deployment anymore, one-click compression, convenient and fast! 👏 
+- 💡 Imagine that you need to use multiple folders during the development process. At this time, you only need to add this plugin to the Vite configuration, and all of them can be packaged into a zip file for easy deployment and transmission. It is the gospel of programmers! 😍 
+- 🎁 Of course, this library doesn't stop there, it also supports custom name, path and other parameters to meet your various weird needs! After all, every programmer has his own little habits and hobbies. 😝 
+- 🔽 If you also want to try this amazing plugin, remember to download it from github or use the npm package~ 🤗
 
-## 使用方法
+## How to use
 
 ```typescript
 // Path: path/to/vite.config.ts
@@ -50,7 +50,7 @@ export default defineConfig({
 });
 ```
 
-## 参数说明
+## Parameter description
 
 ```ts
 interface ArchiveFile {
@@ -65,20 +65,20 @@ interface FileManagerConfigurationOptions {
 }
 ```
 
-| 参数    | 说明         | 类型                    | 默认值 |
+| parameter | description | type | default value | 
 | ------- | ------------ | ----------------------- | ------ |
-| delete  | 删除指定文件 | Array&lt;string&gt;     | []     |
-| filter  | 过滤指定文件 | Array<RegExp \| string> | []     |
-| archive | 打包指定文件 | ArchiveFile[]           | []     |
+| delete  | delete the specified file | Array&lt;string&gt;     | []     |
+| filter  | filter the specified file | Array<RegExp \| string> | []     |
+| archive | Pack specified file | ArchiveFile[]           | []     |
 
 ### ArchiveFile
 
 | 参数        | 说明         | 类型   | 默认值 |
 | ----------- | ------------ | ------ | ------ |
-| source      | 源文件路径   | string | -      |
-| destination | 目标文件路径 | string | -      |
+| source      | source file path   | string | -      |
+| destination | target file path | string | -      |
 
-## 效果展示
+## Effect
 
 ```log
 [vite-plugin-filemanager] 👻 delete file(director): ./dist/*.zip successfully.
