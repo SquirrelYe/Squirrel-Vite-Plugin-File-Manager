@@ -86,6 +86,11 @@ interface FileManagerConfigurationOptions {
 [vite-plugin-filemanager] 👻 archive file: ../pgos-server/src -> ./dist/back-end.zip successfully.
 ```
 
+## 数据统计
+
+[![Star History Chart](https://api.star-history.com/svg?repos=SquirrelYe/Squirrel-Vite-Plugin-File-Manager&type=Timeline)](https://star-history.com/#SquirrelYe/Squirrel-Vite-Plugin-File-Manager&Timeline)
+
+
 ## License
 
 SquirrelJS © 2023 - [MIT License](LICENSE)
